@@ -12,6 +12,11 @@ const modalbg = document.querySelector(".bground"); //gestion background
 const modalBtn = document.querySelectorAll(".modal-btn"); //apparition formulaire au clic bouton
 const formData = document.querySelectorAll(".formData"); //création ensemble clef-valeur (formulaire)
 
+// Elements button
+const closeModalBtn = document.querySelectorAll(".close") //fermer le formulaire
+const confirmationCloseBtn = document.querySelector("#btn-closed"); // bouton "fermer"
+const formValid = document.querySelector("#btn-submit");
+
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
