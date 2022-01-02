@@ -17,7 +17,16 @@ const topNav = document.querySelector("#myTopnav")
 // Elements button
 const closeModalBtn = document.querySelectorAll(".close") //fermer le formulaire
 const confirmationCloseBtn = document.querySelector("#btn-closed"); // bouton "fermer"
-const formValid = document.querySelector("#btn-submit");
+const formValid = document.querySelector("#btn-submit"); //formulaire validé
+
+// Elements VALIDATE
+const firstName = document.querySelector("#first");
+const lastName = document.querySelector("#last");
+const eMail = document.querySelector("#email");
+const birthDate = document.querySelector("#birthdate");
+const eventParticipation = document.querySelector("#quantity");
+const eventCity = document.querySelectorAll('.checkbox-input[name="location"]');
+const cgu = document.querySelector("#checkbox1");
 
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
