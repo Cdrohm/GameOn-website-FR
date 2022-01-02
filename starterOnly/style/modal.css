@@ -111,12 +111,12 @@ img {
 }
 
 @media screen and (max-width: 768px) {
- /* .topnav.responsive {position: relative;}
+  .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }*/
+  }
   .topnav.responsive a {
     float: none;
     display: block;
@@ -453,7 +453,7 @@ input[data-error]::after {
   font-size: 16px;
 }
 .hero-section {
-  min-height: 93vh;
+  min-height: 70vh;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -526,6 +526,8 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
+
+/*tablet*/
 @media screen and (max-width: 800px) {
   .hero-section {
     display: block;

@@ -1,3 +1,4 @@
+/*Changement du menu selon taille écran
 function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -5,7 +6,7 @@ function editNav() {
   } else {
     x.className = "topnav";
   }
-}
+}*/
 
 // DOM Elements
 const modalbg = document.querySelector(".bground"); //gestion background
