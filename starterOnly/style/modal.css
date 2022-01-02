@@ -498,8 +498,8 @@ input[data-error]::after {
 .btn-signup {
   outline: none;
   text-transform: capitalize; /*maj "J" et "M" */
-  font-size: 1.3rem;
-  padding: 15px 23px;
+  font-size: 1.7rem;
+  padding: 15px 40px;
   margin: 0;
   margin-top: 110px;
 }
