@@ -41,6 +41,7 @@ img {
   padding-right: 1rem;
 }
 
+/*navbar + logo*/
 .topnav {
   overflow: hidden;
   margin: 3.5%;
@@ -73,6 +74,7 @@ img {
   background-color: #ff0000;
   color: #ffffff;
   border-radius: 15px;
+  text-decoration: revert;
 }
 
 .topnav .icon {
