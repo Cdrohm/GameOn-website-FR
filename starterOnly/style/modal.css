@@ -81,7 +81,7 @@ img {
   display: none;
 }
 
-/*MENU smartphone*/
+/*MENU responsive*/
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -89,6 +89,25 @@ img {
     display: block;
     align-items: center;
     color: red;
+  }
+  .topnav a:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+
+  .topnav a.active {
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+
+  .main-navbar {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    background: white;
+    z-index: 10;
   }
 }
 
