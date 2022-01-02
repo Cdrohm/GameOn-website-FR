@@ -11,6 +11,8 @@ function editNav() {
 const modalbg = document.querySelector(".bground"); //gestion background
 const modalBtn = document.querySelectorAll(".modal-btn"); //apparition formulaire au clic bouton
 const formData = document.querySelectorAll(".formData"); //création ensemble clef-valeur (formulaire)
+const menuResponsive = document.querySelector("#myTopnav .icon")
+const topNav = document.querySelector("#myTopnav")
 
 // Elements button
 const closeModalBtn = document.querySelectorAll(".close") //fermer le formulaire
