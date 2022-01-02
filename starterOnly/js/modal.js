@@ -28,6 +28,19 @@ const eventParticipation = document.querySelector("#quantity");
 const eventCity = document.querySelectorAll('.checkbox-input[name="location"]');
 const cgu = document.querySelector("#checkbox1");
 
+// elements ERROR
+const errorFirstName = document.querySelector("#missfirst");
+const errorLastName = document.querySelector("#misslast");
+const errorMail = document.querySelector("#missemail");
+const errorBirthDate = document.querySelector("#missbirthdate");
+const errorEventParticipation = document.querySelector("#missquantity");
+const errorEventCity = document.querySelector("#misslocalisation");
+const errorCgu = document.querySelector("#misscheckbox1");
+const numbersValue = /[0-9]/; //chiffres seulement
+const regex = /^[a-zA-Z\s]*$/; //lettres seulement
+
+const confirmationValidation = document.querySelector("#confirm-modal");
+
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
