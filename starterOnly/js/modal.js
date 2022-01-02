@@ -65,4 +65,13 @@ function launchModal() {
   confirmationValidation.style.display = 'none';
 }
 
+// Close Modal Form
+closeModalBtn[0].addEventListener("click", closeModal);
+
+function closeModal() {
+    modalbg.style.display = 'none';
+    form.style.display = 'block';
+    confirmationValidation.style.display = 'none';
+}
+
 
