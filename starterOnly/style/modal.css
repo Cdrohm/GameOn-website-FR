@@ -81,11 +81,14 @@ img {
   display: none;
 }
 
+/*MENU smartphone*/
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
+    align-items: center;
+    color: red;
   }
 }
 
