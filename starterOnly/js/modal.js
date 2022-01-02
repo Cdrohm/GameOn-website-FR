@@ -38,8 +38,11 @@ const errorEventCity = document.querySelector("#misslocalisation");
 const errorCgu = document.querySelector("#misscheckbox1");
 const numbersValue = /[0-9]/; //chiffres seulement
 const regex = /^[a-zA-Z\s]*$/; //lettres seulement
-
 const confirmationValidation = document.querySelector("#confirm-modal");
+
+// elements SEND FORM (envoi formulaire)
+const form = document.querySelector('form[name="reserve"]')
+
 
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
