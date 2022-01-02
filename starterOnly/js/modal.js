@@ -215,3 +215,11 @@ function validate() {
         confirmationValidation.style.display = 'flex';
     }
   }
+
+  // Close form with message 
+document.querySelector("#btn-closed").addEventListener("click", closeModal);
+
+//réinitialisation du formulaire
+console.log((formData));
+//$('.formData')[0].reset();
+document.getElementById("reserve").reset();
