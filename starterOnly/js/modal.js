@@ -74,4 +74,9 @@ function closeModal() {
     confirmationValidation.style.display = 'none';
 }
 
+// Send Form Registration
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  validate();
+});
 
