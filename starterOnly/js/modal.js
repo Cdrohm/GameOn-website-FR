@@ -43,6 +43,18 @@ const confirmationValidation = document.querySelector("#confirm-modal");
 // elements SEND FORM (envoi formulaire)
 const form = document.querySelector('form[name="reserve"]')
 
+// Menu dépliant (responsive)
+menuResponsive.addEventListener('click', editNav); // !
+
+function editNav(event) {
+    event.preventDefault();
+    if (topNav.className === "topnav") {
+        topNav.className += "responsive";
+    } else {
+        topNav.className = "topnav";
+    }
+}
+
 
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
