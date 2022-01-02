@@ -8,9 +8,9 @@ function editNav() {
 }
 
 // DOM Elements
-const modalbg = document.querySelector(".bground");
-const modalBtn = document.querySelectorAll(".modal-btn");
-const formData = document.querySelectorAll(".formData");
+const modalbg = document.querySelector(".bground"); //gestion background
+const modalBtn = document.querySelectorAll(".modal-btn"); //apparition formulaire au clic bouton
+const formData = document.querySelectorAll(".formData"); //création ensemble clef-valeur (formulaire)
 
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
