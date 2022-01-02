@@ -1,4 +1,4 @@
-/*Changement du menu selon taille écran
+//Changement du menu selon taille écran
 function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -6,7 +6,7 @@ function editNav() {
   } else {
     x.className = "topnav";
   }
-}*/
+}
 
 // DOM Elements
 const modalbg = document.querySelector(".bground"); //gestion background
@@ -45,8 +45,7 @@ const confirmationValidation = document.querySelector("#confirm-modal");
 const form = document.querySelector('form[name="reserve"]')
 
 // Menu dépliant (responsive)
-menuResponsive.addEventListener('click', editNav); // !
-
+menuResponsive.addEventListener('click', editNav);
 function editNav(event) {
     event.preventDefault();
     if (topNav.className === "topnav") {
@@ -172,7 +171,7 @@ function validateEventCity(eventCity) {
   })
   
   if (eventCityChecked === 0) {
-        errorEventCity.style.display = "inline";
+        //errorEventCity.style.display = "inline";
         errorEventCity.innerText = "Veuillez choisir une ou plusieurs ville(s).";
         errorEventCity.style.color = 'red';
         errorEventCity.style.fontSize = '0.8rem';
