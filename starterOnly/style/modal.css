@@ -491,7 +491,7 @@ input[data-error]::after {
 .hero-text {
   width: 146%;
   font-weight: normal;
-  margin-top: 57px;
+  margin-top: 70px;
   padding: 0;
 }
 .btn-signup {
@@ -577,3 +577,22 @@ footer {
   }
 }
 
+/*Warning Layout*/
+.error span {
+  display: inline;
+  color: red;
+  font-size: .8rem;
+  margin-top: 10px;
+}
+
+.error input {
+  border: 2px solid red;
+}
+
+.success span {
+  display: none;
+}
+
+.success input {
+  border: 2px solid green;
+}
