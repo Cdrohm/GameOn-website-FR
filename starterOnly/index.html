@@ -135,6 +135,23 @@
             <!-- bouton pour soumettre son formulaire -->
             <input class="btn-submit" type="submit" class="button" value="C'est parti" />
           </form>
+
+          <!-- partie message de confirmation - apparition après validation du formulaire -->
+        <div id="confirm-modal" class="content">
+          <div class="modal-body">
+            <span class="confirm-modal-btn closed"></span>
+            <p id="confirm-msg">
+              Merci pour <br> votre inscription
+            </p>
+            <!-- bouton retour page d'accueil correspond à la constante :
+              const confirmationCloseBtn = document.getElementsById("btn-closed") (JS)-->
+            <button id="btn-closed">
+              Fermer
+            </button>
+            
+          </div>
+        </div>
+
         </div>
       </div>
     </div>
