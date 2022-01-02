@@ -81,7 +81,7 @@ img {
   display: none;
 }
 
-/*MENU responsive*/
+/*MENU responsive tablet*/
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -106,18 +106,17 @@ img {
     position: fixed;
     right: 0;
     top: 100px;
-    background: white;
     z-index: 10;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .topnav.responsive {position: relative;}
+ /* .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  }*/
   .topnav.responsive a {
     float: none;
     display: block;
@@ -126,15 +125,28 @@ img {
 }
 
 
-
- @media screen and (max-width: 540px) {
+/*Menu smartphone*/
+@media screen and (max-width: 540px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
+    align-items: center;
+    color: #ff0000;
   }
-} 
+
+  .topnav a:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+
+  .topnav a.active {
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+}
 
 main {
   font-size: 130%;
