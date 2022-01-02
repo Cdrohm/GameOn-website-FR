@@ -196,3 +196,22 @@ function validateCgu(cgu) {
       return true;
   }; 
 }
+
+// Validation form 
+function validate() {
+  //déclarer une variable
+    let isFormValidate = [];
+  
+    isFormValidate.push(validateFirstName(firstName));
+    isFormValidate.push(validateLastName(lastName));
+    isFormValidate.push(validateEmail(eMail));
+    isFormValidate.push(validateBirthdate(birthDate));
+    isFormValidate.push(validateEventParticipation(eventParticipation));
+    isFormValidate.push(validateEventCity(eventCity));
+    isFormValidate.push(validateCgu(cgu));
+  
+    if (!isFormValidate.includes(false)) {
+        form.style.display = 'none';
+        confirmationValidation.style.display = 'flex';
+    }
+  }
