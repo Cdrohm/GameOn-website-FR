@@ -1,3 +1,4 @@
+/*Général*/
 :root {
   --font-default: "DM Sans", Arial, Helvetica, sans-serif;
   --font-slab: var(--font-default);
@@ -24,6 +25,16 @@ body {
 p {
   margin-bottom: 0;
   padding: 0.5vw;
+}
+
+#confirm-msg {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+#confirm-modal {
+  height: 90%;
 }
 
 img {
@@ -208,6 +219,7 @@ input {
   font-size: 20px;
   height: 48px;
 }
+/*message d'erreur*/
 .formData[data-error]::after {
   content: attr(data-error);
   font-size: 0.4em;
