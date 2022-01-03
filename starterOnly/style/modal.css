@@ -112,12 +112,12 @@ img {
 }
 
 @media screen and (max-width: 768px) {
- /* .topnav.responsive {position: relative;}
+  .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }*/
+  }
   .topnav.responsive a {
     float: right;
     display: block;
