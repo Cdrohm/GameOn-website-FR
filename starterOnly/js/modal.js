@@ -51,14 +51,14 @@ const form = document.querySelector('form[name="reserve"]')
 
 // Menu dépliant (responsive)
 menuResponsive.addEventListener('click', editNav);
-/*function editNav(event) {
+function editNav(event) {
   event.preventDefault();
   if (topNav.className === "topnav") {
     topNav.className += "responsive";
   } else {
     topNav.className = "topnav";
   }
-}*/
+}
 
 //Changement du menu selon taille écran
 function editNav() {
