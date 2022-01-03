@@ -2,7 +2,7 @@
 function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
-    x.className += " responsive";
+    x.className += "responsive";
   } else {
     x.className = "topnav";
   }
@@ -208,6 +208,11 @@ function validateEventCity(eventCity) {
   };
 }
 
+/**
+ * validation des cgu par cochage de case (précochée)
+ * @param {*} cgu 
+ * @returns message d'erreur
+ */
 function validateCgu(cgu) {
   if (cgu.checked == false) {
     errorCgu.style.display = "inline";
