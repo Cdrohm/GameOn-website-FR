@@ -87,8 +87,9 @@ img {
     float: right;
     display: block;
     align-items: center;
-    color: red;
+    color: #ff0000;
   }
+
   .topnav a:hover {
     background-color: #ff0000;
     color: #ffffff;
@@ -105,19 +106,20 @@ img {
     position: initial;
     right: 0;
     top: 100px;
+    background: white;
     z-index: 10;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .topnav.responsive {position: relative;}
+ /* .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  }*/
   .topnav.responsive a {
-    float: none;
+    float: right;
     display: block;
     text-align: left;
   }

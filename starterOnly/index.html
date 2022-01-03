@@ -15,19 +15,19 @@
   <div class="topnav" id="myTopnav">
     <!--LOGO-->
     <div class="header-logo">
-      <img alt="logo" src="img/Logo.png"/>
+      <img alt="logo" src="img/Logo.png" />
     </div>
-    
-    <!--MENU NAVBAR-->
-    <div class="main-navbar">
 
+    <!--MENU NAVBAR-->
+    <a href="#" class="icon">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="main-navbar">
       <a href="#" class="active"><span>Détails de l'évènement</span></a>
       <a href="#"><span>À propos</span></a>
       <a href="#"><span>Contact</span></a>
       <a href="#"><span>Évènements passés</span></a>
-      <a href="#" class="icon" >
-        <i class="fa fa-bars"></i>
-      </a>
+
     </div>
   </div>
   </div>
@@ -120,7 +120,7 @@
               <label class="checkbox-label" for="location6">
                 <span class="checkbox-icon"></span>
                 Portland</label>
-                <span id="misslocation"></span>
+              <span id="misslocation"></span>
             </div>
             <!-- fin de la liste des villes -->
 
@@ -141,26 +141,26 @@
               <br>
             </div>
             <!-- bouton pour soumettre son formulaire -->
-            <input class="btn-submit" type="submit" class="button" value="C'est parti" id="btn-submit"/>
+            <input class="btn-submit" type="submit" class="button" value="C'est parti" id="btn-submit" />
           </form>
-        </div>  
-          <!-- partie message de confirmation - apparition après validation du formulaire -->
-          <div id="confirm-modal" class="content">
-            <div class="modal-body">
-              <span class="confirm-modal-btn closed"></span>
-              <p id="confirm-msg">
-                Merci pour <br> votre inscription
-              </p>
-              <!-- bouton retour page d'accueil correspond à la constante :
+        </div>
+        <!-- partie message de confirmation - apparition après validation du formulaire -->
+        <div id="confirm-modal" class="content">
+          <div class="modal-body">
+            <span class="confirm-modal-btn closed"></span>
+            <p id="confirm-msg">
+              Merci pour <br> votre inscription
+            </p>
+            <!-- bouton retour page d'accueil correspond à la constante :
               const confirmationCloseBtn = document.getElementsById("btn-closed") (JS)-->
-              <button id="btn-closed">
-                Fermer
-              </button>
+            <button id="btn-closed">
+              Fermer
+            </button>
 
-            </div>
           </div>
+        </div>
 
-        
+
       </div>
     </div>
   </main>

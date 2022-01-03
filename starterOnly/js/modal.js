@@ -244,7 +244,6 @@ function validate() {
 // Close form with message 
 document.querySelector("#btn-closed").addEventListener("click", closeModal);
 
-//réinitialisation du formulaire
-console.log((formData));
-//$('.formData')[0].reset();
-document.getElementById("reserve").reset();
+//réinitialisation du formulaire (bonus)
+/*console.log((formData));
+document.getElementById("reserve").reset();*/
