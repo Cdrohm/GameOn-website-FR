@@ -102,7 +102,7 @@ img {
   }
 
   .main-navbar {
-    position: fixed;
+    position: initial;
     right: 0;
     top: 100px;
     z-index: 10;
