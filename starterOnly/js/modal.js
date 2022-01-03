@@ -67,7 +67,7 @@ function launchModal() {
 
 // Close Modal Form
 closeModalBtn[0].addEventListener("click", closeModal);
-
+//fonction fermeture du formulaire
 function closeModal() {
   modalbg.style.display = 'none';
   form.style.display = 'block';
@@ -81,6 +81,11 @@ form.addEventListener('submit', function (e) {
 });
 
 // validate FORM INPUT
+/**
+ * validation prénom (lettres seulement)
+ * @param {*} firstName 
+ * @returns message d'erreur si chiffres ou -2 caractères
+ */
 function validateFirstName(firstName) {
   //console.log (firstName.value.match(regex),regex.test(firstName));
   if (firstName.value.trim().length < 2 || first.value.trim() === '' || !firstName.value.match(regex)) {
@@ -98,6 +103,11 @@ function validateFirstName(firstName) {
   };
 }
 
+/**
+ * validation nom de famille (lettres seulement)
+ * @param {*} lastName 
+ * @returns message d'erreur si chiffres ou -2 caractères
+ */
 function validateLastName(lastName) {
   if (lastName.value.toString().trim().length < 2 || first.value.trim() === '' || !lastName.value.match(regex)) {
     errorLastName.style.display = 'inline';
@@ -114,6 +124,11 @@ function validateLastName(lastName) {
   }
 }
 
+/**
+ * validation email avec @.XXX
+ * @param {*} eMail 
+ * @returns message d'erreur
+ */
 function validateEmail(eMail) {
   if (!/[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(eMail.value)) {
     errorMail.style.display = "inline"
@@ -130,6 +145,11 @@ function validateEmail(eMail) {
   }
 }
 
+/**
+ * validation date d'anniversaire
+ * @param {*} birthDate choisir une date sur le calendrier
+ * @returns message d'erreur
+ */
 function validateBirthdate(birthDate) {
   if (!birthDate.value.match(/^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$/)) {
     errorBirthDate.style.display = "inline";
