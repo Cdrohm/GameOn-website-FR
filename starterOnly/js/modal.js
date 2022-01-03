@@ -169,7 +169,7 @@ function validateEventCity(eventCity) {
       eventCityChecked++;
     }
   })
-  
+  console.log((eventCity));
   if (eventCityChecked === 0) {
         errorEventCity.style.display = "inline";
         errorEventCity.innerText = "Veuillez choisir une ou plusieurs ville(s).";
