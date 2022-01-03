@@ -35,15 +35,14 @@ const numbersValue = /[0-9]/; //chiffres seulement
 const regex = /^[a-zA-Z\s]*$/; //lettres seulement
 const confirmationValidation = document.querySelector("#confirm-modal");
 
-
 /**declaration appel input location (villes) */
 //console.log(radios);
 let prev = null;
 let eventCity = null;
-for(var i = 0; i < radios.length; i++) {
-    radios[i].onclick = function() {
-      eventCity = this.value;
-    };
+for (var i = 0; i < radios.length; i++) {
+  radios[i].onclick = function () {
+    eventCity = this.value;
+  };
 }
 
 // elements SEND FORM (envoi formulaire)
@@ -51,7 +50,7 @@ const form = document.querySelector('form[name="reserve"]')
 
 // Menu dépliant (responsive)
 menuResponsive.addEventListener('click', editNav);
-//Changement du menu selon taille écran
+//Changement du menu selon taille écran / menu 'burger'
 function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -60,7 +59,6 @@ function editNav() {
     x.className = "topnav";
   }
 }
-
 
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
