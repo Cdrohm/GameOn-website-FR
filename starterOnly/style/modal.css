@@ -128,11 +128,15 @@ img {
 
 /*Menu smartphone*/
 @media screen and (max-width: 540px) {
-  .topnav a {display: none;}
+  .topnav a {
+    display: none;
+  }
+
   .topnav a.icon {
     float: right;
     display: block;
     align-items: center;
+    justify-content: center;
     color: #ff0000;
   }
 

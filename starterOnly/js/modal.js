@@ -1,12 +1,4 @@
-//Changement du menu selon taille écran
-function editNav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += "responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+
 
 // DOM Elements
 const modalbg = document.querySelector(".bground"); //gestion background
@@ -26,7 +18,9 @@ const lastName = document.querySelector("#last");
 const eMail = document.querySelector("#email");
 const birthDate = document.querySelector("#birthdate");
 const eventParticipation = document.querySelector("#quantity");
-const eventCity = document.querySelector('input[name="location"]:checked');
+const radios = document.querySelectorAll('input[name="location"]');
+//const eventCity = document.querySelector('input[name="location"]');
+//console.log(eventCity);
 const cgu = document.querySelector("#checkbox1");
 
 // elements ERROR
@@ -41,17 +35,38 @@ const numbersValue = /[0-9]/; //chiffres seulement
 const regex = /^[a-zA-Z\s]*$/; //lettres seulement
 const confirmationValidation = document.querySelector("#confirm-modal");
 
+
+/**declaration appel input location (villes) */
+//console.log(radios);
+let prev = null;
+let eventCity = null;
+for(var i = 0; i < radios.length; i++) {
+    radios[i].onclick = function() {
+      eventCity = this.value;
+    };
+}
+
 // elements SEND FORM (envoi formulaire)
 const form = document.querySelector('form[name="reserve"]')
 
 // Menu dépliant (responsive)
 menuResponsive.addEventListener('click', editNav);
-function editNav(event) {
+/*function editNav(event) {
   event.preventDefault();
   if (topNav.className === "topnav") {
     topNav.className += "responsive";
   } else {
     topNav.className = "topnav";
+  }
+}*/
+
+//Changement du menu selon taille écran
+function editNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += "responsive";
+  } else {
+    x.className = "topnav";
   }
 }
 
@@ -193,7 +208,7 @@ function validateEventParticipation(eventParticipation) {
  * @returns message d'erreur
  */
 function validateEventCity(eventCity) {
-  // 
+  // console.log(eventCity)
   if (eventCity == undefined || eventCity == null) {
     errorEventCity.style.display = "inline-block";
     errorEventCity.innerText = "Veuillez choisir une ou plusieurs ville(s).";
