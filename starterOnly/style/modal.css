@@ -106,12 +106,13 @@ img {
   }
 
   .main-navbar {
-    position: initial;
+    position: fixed;
     right: 0;
-    top: 100px;
+    top: 15px;
     background: white;
     z-index: 10;
     display: flex;
+    flex-direction: column;
   }
 }
 
