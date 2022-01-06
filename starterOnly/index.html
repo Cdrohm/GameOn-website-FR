@@ -19,15 +19,15 @@
     </div>
 
     <!--MENU NAVBAR-->
+    <a href="#" class="icon">
+      <i class="fa fa-bars"></i>
+    </a>
+
     <div class="main-navbar">
       <a href="#" class="active"><span>Détails de l'évènement</span></a>
       <a href="#"><span>À propos</span></a>
       <a href="#"><span>Contact</span></a>
       <a href="#"><span>Évènements passés</span></a>
-      <!--icone menu mobil-->
-      <a href="#" class="icon">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
   </div>
   </div>
@@ -35,26 +35,32 @@
   <main>
     <!--partie formulaire-->
     <div class="hero-section">
+
       <!--elements page d'accueil -->
       <div class="hero-content">
+
         <!--titre principal-->
         <h1 class="hero-headline">
           Marathon national<br>
           de jeux vidéos
         </h1>
+        
         <p class="hero-text">
           Vous aimez jouer ? Notre prochain évènement gaming est ouvert
           aux réservations... Places limitées !
         </p>
+
         <!--bouton inscription-->
         <button class="btn-signup modal-btn">
           je m'inscris
         </button>
       </div>
+
       <!--img fond-->
       <div class="hero-img">
         <img src="img/bg_img.jpg" alt="img" />
       </div>
+
       <!--bouton inscription mobile-->
       <button class="btn-signup modal-btn">
         je m'inscris
@@ -65,7 +71,9 @@
     <!-- couleur de fond -->
     <div class="bground">
       <div class="content">
+
         <span class="close"></span> <!-- zone fermeture de fenetre-->
+
         <div class="modal-body">
           <form name="reserve" action="index.html" id="reserve" method="get">
             <div class="formData">
@@ -73,53 +81,65 @@
               <input class="text-control" type="text" id="first" name="first" placeholder="John" /><span
                 id="missfirst"></span>
             </div>
+
             <div class="formData">
               <label>Nom</label><br> <!-- ne doit contenir que des lettres -->
               <input class="text-control" type="text" id="last" name="last" placeholder="Doe" /><span
                 id="misslast"></span>
             </div>
+
             <div class="formData">
               <label>E-mail</label><br> <!-- peut contenir des lettres, chiffres et caractères spéciaux -->
               <input class="text-control" type="email" id="email" name="email" placeholder="john.doe@gmail.com" /><span
                 id="missemail"></span>
             </div>
+
             <div class="formData">
               <label>Date de naissance</label><br> <!-- ne doit contenir que des ciffres-->
               <input class="text-control" type="date" id="birthdate" name="birthdate" /><span id="missbirthdate"></span>
             </div>
+
             <div class="formData">
               <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
               <!-- ne doit contenir que des chiffres -->
               <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99"
                 placeholder="0" /><span id="missquantity"></span>
             </div>
+
             <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
+
             <!-- liste des villes -->
             <div class="formData">
               <input class="checkbox-input" type="radio" id="location1" name="location" value="New York" />
               <label class="checkbox-label" for="location1">
                 <span class="checkbox-icon"></span>
                 New York</label>
+
               <input class="checkbox-input" type="radio" id="location2" name="location" value="San Francisco" />
               <label class="checkbox-label" for="location2">
                 <span class="checkbox-icon"></span>
                 San Francisco</label>
+
               <input class="checkbox-input" type="radio" id="location3" name="location" value="Seattle" />
               <label class="checkbox-label" for="location3">
                 <span class="checkbox-icon"></span>
                 Seattle</label>
+
               <input class="checkbox-input" type="radio" id="location4" name="location" value="Chicago" />
               <label class="checkbox-label" for="location4">
                 <span class="checkbox-icon"></span>
                 Chicago</label>
+
               <input class="checkbox-input" type="radio" id="location5" name="location" value="Boston" />
               <label class="checkbox-label" for="location5">
                 <span class="checkbox-icon"></span>
                 Boston</label>
+
               <input class="checkbox-input" type="radio" id="location6" name="location" value="Portland" />
               <label class="checkbox-label" for="location6">
                 <span class="checkbox-icon"></span>
                 Portland</label>
+
               <span id="misslocation"></span>
             </div>
             <!-- fin de la liste des villes -->
@@ -131,6 +151,7 @@
                 <span class="checkbox-icon"></span>
                 J'ai lu et accepté les conditions d'utilisation.
               </label>
+
               <span id="misscheckbox1"></span>
               <br>
               <input class="checkbox-input" type="checkbox" id="checkbox2" />
@@ -140,10 +161,12 @@
               </label>
               <br>
             </div>
+
             <!-- bouton pour soumettre son formulaire -->
             <input class="btn-submit" type="submit" class="button" value="C'est parti" id="btn-submit" />
           </form>
         </div>
+
         <!-- partie message de confirmation - apparition après validation du formulaire -->
         <div id="confirm-modal" class="content">
           <div class="modal-body">
@@ -151,6 +174,7 @@
             <p id="confirm-msg">
               Merci pour <br> votre inscription
             </p>
+
             <!-- bouton retour page d'accueil correspond à la constante :
               const confirmationCloseBtn = document.getElementsById("btn-closed") (JS)-->
             <button id="btn-closed">
@@ -159,18 +183,19 @@
 
           </div>
         </div>
-
-
       </div>
     </div>
   </main>
+
   <footer>
     <p class="copyrights">
       Copyright 2014 - 2022, GameOn Inc.
     </p>
   </footer>
+
   <!--chemin injection fichier javascript-->
   <script src="js/modal.js"></script>
+
 </body>
 
 </html>
