@@ -1,9 +1,11 @@
-
+//JAVASCRIPT
 
 // DOM Elements
 const modalbg = document.querySelector(".bground"); //gestion background
 const modalBtn = document.querySelectorAll(".modal-btn"); //apparition formulaire au clic bouton
 const formData = document.querySelectorAll(".formData"); //création ensemble clef-valeur (formulaire)
+
+//Elements MENU
 const menuResponsive = document.querySelector("#myTopnav .icon")
 const topNav = document.querySelector("#myTopnav")
 
