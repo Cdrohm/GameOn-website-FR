@@ -114,6 +114,10 @@ img {
     display: flex;
     flex-direction: column;
   }
+
+  .responsive .main-navbar{
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) {
