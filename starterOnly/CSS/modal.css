@@ -673,7 +673,7 @@ footer {
   .hero-content {
       width: 100%;
       margin: 0 auto;
-      padding: 0 auto;
+      padding: 0;
   }
 
   .hero-headline {
@@ -694,7 +694,7 @@ footer {
   .hero-content {
       width: 100%;
       margin: 0 auto;
-      padding: 0 auto;
+      padding: 0;
   }
 
   .hero-headline {
