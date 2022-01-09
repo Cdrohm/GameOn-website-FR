@@ -225,7 +225,7 @@ function validateCgu(cgu) {
         errorCgu.innerText = "Vous devez accepter les termes et conditions.";
         errorCgu.style.color = 'red';
         errorCgu.style.fontSize = '0.8rem';
-        errorCgu.style.marginTop = '10px';
+        errorCgu.style.marginTop = '5px';
         return false;
     } else {
         errorCgu.style.display = 'none';
