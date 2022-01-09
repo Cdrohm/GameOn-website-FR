@@ -221,7 +221,7 @@ function validateEventCity(eventCity) {
  */
 function validateCgu(cgu) {
     if (cgu.checked == false) {
-        errorCgu.style.display = "inline";
+        errorCgu.style.display = "inline-block";
         errorCgu.innerText = "Vous devez accepter les termes et conditions.";
         errorCgu.style.color = 'red';
         errorCgu.style.fontSize = '0.8rem';
