@@ -1,5 +1,4 @@
 //JAVASCRIPT
-
 // DOM Elements
 const modalbg = document.querySelector(".bground"); //gestion background
 const modalBtn = document.querySelectorAll(".modal-btn"); //apparition formulaire au clic bouton
