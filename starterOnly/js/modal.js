@@ -88,7 +88,7 @@ form.addEventListener('submit', function(e) {
 //validate FORM INPUT
 /**
  * validation prénom (lettres seulement)
- * @param {*} firstName 
+ * @param {*}firstName 
  * @returns message d'erreur si chiffres ou -2 caractères
  */
 function validateFirstName(firstName) {
@@ -110,7 +110,7 @@ function validateFirstName(firstName) {
 
 /**
  * validation nom de famille (lettres seulement)
- * @param {*} lastName 
+ * @param {*}lastName 
  * @returns message d'erreur si chiffres ou -2 caractères
  */
 function validateLastName(lastName) {
@@ -131,7 +131,7 @@ function validateLastName(lastName) {
 
 /**
  * validation email avec @.XXX
- * @param {*} eMail 
+ * @param {*}eMail 
  * @returns message d'erreur
  */
 function validateEmail(eMail) {
@@ -152,7 +152,7 @@ function validateEmail(eMail) {
 
 /**
  * validation date d'anniversaire
- * @param {*} birthDate choisir une date sur le calendrier
+ * @param {*}birthDate choisir une date sur le calendrier
  * @returns message d'erreur
  */
 function validateBirthdate(birthDate) {
@@ -173,7 +173,7 @@ function validateBirthdate(birthDate) {
 
 /**
  * validation participation aux anciens evenements (nombre)
- * @param {*} eventParticipation 
+ * @param {*}eventParticipation 
  * @returns message d'erreur 
  */
 function validateEventParticipation(eventParticipation) {
@@ -194,7 +194,7 @@ function validateEventParticipation(eventParticipation) {
 
 /**
  * validation du choix de la ville par cochage d'une case
- * @param {*} eventCity 
+ * @param {*}eventCity 
  * @returns message d'erreur
  */
 function validateEventCity(eventCity) {
@@ -215,7 +215,7 @@ function validateEventCity(eventCity) {
 
 /**
  * validation des cgu par cochage de case (précochée)
- * @param {*} cgu 
+ * @param {*}cgu 
  * @returns message d'erreur
  */
 function validateCgu(cgu) {
@@ -227,7 +227,7 @@ function validateCgu(cgu) {
         errorCgu.style.marginTop = "5px";
         return false;
     } else {
-        errorCgu.style.display = 'none';
+        errorCgu.style.display = "none";
         return true;
     };
 }
@@ -246,8 +246,8 @@ function validate() {
     isFormValidate.push(validateCgu(cgu));
 
     if (!isFormValidate.includes(false)) {
-        form.style.display = 'none';
-        confirmationValidation.style.display = 'flex';
+        form.style.display = "none";
+        confirmationValidation.style.display = "flex";
     }
 }
 

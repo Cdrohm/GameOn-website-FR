@@ -30,7 +30,7 @@
             <a href="#"><span>Évènements passés</span></a>
         </div>
     </div>
-    
+
 
     <main>
         <!--partie formulaire-->
@@ -78,40 +78,48 @@
                     <form name="reserve" action="index.html" id="reserve" method="get">
                         <div class="formData">
                             <label>Prénom</label><br> <!-- ne doit contenir que des lettres -->
-                            <input class="text-control" type="text" id="first" name="first" placeholder="John" /><span id="missfirst"></span>
+                            <input class="text-control" type="text" id="first" name="first" placeholder="John" /><span
+                                id="missfirst"></span>
                         </div>
 
                         <div class="formData">
                             <label>Nom</label><br> <!-- ne doit contenir que des lettres -->
-                            <input class="text-control" type="text" id="last" name="last" placeholder="Doe" /><span id="misslast"></span>
+                            <input class="text-control" type="text" id="last" name="last" placeholder="Doe" /><span
+                                id="misslast"></span>
                         </div>
 
                         <div class="formData">
-                            <label>E-mail</label><br> <!-- peut contenir des lettres, chiffres et caractères spéciaux -->
-                            <input class="text-control" type="email" id="email" name="email" placeholder="john.doe@gmail.com" /><span id="missemail"></span>
+                            <label>E-mail</label><br>
+                            <!-- peut contenir des lettres, chiffres et caractères spéciaux -->
+                            <input class="text-control" type="email" id="email" name="email"
+                                placeholder="john.doe@gmail.com" /><span id="missemail"></span>
                         </div>
 
                         <div class="formData">
                             <label>Date de naissance</label><br> <!-- ne doit contenir que des ciffres-->
-                            <input class="text-control" type="date" id="birthdate" name="birthdate" /><span id="missbirthdate"></span>
+                            <input class="text-control" type="date" id="birthdate" name="birthdate" /><span
+                                id="missbirthdate"></span>
                         </div>
 
                         <div class="formData">
                             <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                             <!-- ne doit contenir que des chiffres -->
-                            <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" placeholder="0" /><span id="missquantity"></span>
+                            <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99"
+                                placeholder="0" /><span id="missquantity"></span>
                         </div>
 
                         <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
 
                         <!-- liste des villes -->
                         <div class="formData">
-                            <input class="checkbox-input" type="radio" id="location1" name="location" value="New York" />
+                            <input class="checkbox-input" type="radio" id="location1" name="location"
+                                value="New York" />
                             <label class="checkbox-label" for="location1">
                                 <span class="checkbox-icon"></span>
                                 New York</label>
 
-                            <input class="checkbox-input" type="radio" id="location2" name="location" value="San Francisco" />
+                            <input class="checkbox-input" type="radio" id="location2" name="location"
+                                value="San Francisco" />
                             <label class="checkbox-label" for="location2">
                                 <span class="checkbox-icon"></span>
                                 San Francisco</label>
@@ -131,7 +139,8 @@
                                 <span class="checkbox-icon"></span>
                                 Boston</label>
 
-                            <input class="checkbox-input" type="radio" id="location6" name="location" value="Portland" />
+                            <input class="checkbox-input" type="radio" id="location6" name="location"
+                                value="Portland" />
                             <label class="checkbox-label" for="location6">
                                 <span class="checkbox-icon"></span>
                                 Portland</label>
@@ -143,11 +152,11 @@
                         <div class="formData">
                             <!-- infos complémentaires (conditions utilisation + newsletter)-->
                             <input class="checkbox-input" type="checkbox" id="checkbox1" checked />
-                            <label class="checkbox2-label" for="checkbox1" required>
+                            <label class="checkbox2-label" for="checkbox1">
                                 <span class="checkbox-icon"></span>
-                                <p>
-                                  J'ai lu et accepté les conditions d'utilisation.
-                                </p>
+
+                                J'ai lu et accepté les conditions d'utilisation.
+
                             </label>
 
                             <span id="misscheckbox1"></span>
@@ -155,15 +164,15 @@
                             <input class="checkbox-input" type="checkbox" id="checkbox2" />
                             <label class="checkbox2-label" for="checkbox2">
                                 <span class="checkbox-icon"></span>
-                                <p>
-                                  Je souhaite être prévenu des prochains évènements.
-                                </p>  
+
+                                Je souhaite être prévenu des prochains évènements.
+
                             </label>
                             <br>
                         </div>
 
                         <!-- bouton pour soumettre son formulaire -->
-                        <input class="btn-submit" type="submit" class="button" value="C'est parti" id="btn-submit" />
+                        <input class="btn-submit button" type="submit" value="C'est parti" id="btn-submit" />
                     </form>
                 </div>
 
